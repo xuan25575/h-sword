@@ -34,6 +34,7 @@ public class RedisWatchLock {
 
     private static CountDownLatch latch;
 
+
     private static AtomicInteger counter = new AtomicInteger(0);
     static{
         //利用Redis连接池，保证多个线程利用多个连接，充分模拟并发性
@@ -49,6 +50,7 @@ public class RedisWatchLock {
     }
 
     public static void main(String args[]){
+
         int  len = 10;
         String ThreadNamePrefix = "thread-";
         Jedis cli = pool.getResource();

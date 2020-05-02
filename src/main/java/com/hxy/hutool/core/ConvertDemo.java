@@ -4,6 +4,8 @@ import cn.hutool.core.convert.Convert;
 import com.hxy.jdk.stream.domain.Person;
 import lombok.Data;
 
+import java.util.ArrayList;
+
 /**
  * @Author huang_2
  * @Date 2020/4/29 10:28 上午
@@ -35,6 +37,8 @@ public class ConvertDemo {
         P convert1 = Convert.convert(P.class, p);
 
         System.out.println(convert1);
+
+        ArrayList list = new ArrayList();
 
 
     }

@@ -73,6 +73,12 @@ public class DistributedLockByRedis {
     }
 
 
+    public static void main(String[] args) {
+
+
+    }
+
+
 
 
 }
